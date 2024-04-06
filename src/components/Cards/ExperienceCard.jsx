@@ -33,6 +33,7 @@ max-width: 100%;
 text-overflow: ellipsis;
 `
 
+
 const Card = styled.div`
     width: 650px;
     border-radius: 10px;
@@ -160,6 +161,13 @@ const ExperienceCard = ({ experience }) => {
                     <Span>{experience?.desc}</Span>
 
                 }
+                {/* {Array.isArray(experience.desc) && (
+                    <ul>
+                      {experience.desc.map((desc, index) => (
+                        <li key={index}>{desc}</li>
+                      ))}
+                    </ul>
+                )} */}
                 {experience?.skills &&
                     <>
                         <br />
